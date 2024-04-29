@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% if (kurs.length === 0) { %>
+        <p>Nema kursevi.</p>
+    
+        <% } else {%> 
+            <% kurs.forEach(kurs =>{%>
+        <div class="kurs">
+            <table>
+                <tr>
+                    <th>Ime</th>
+                    <th>Adresa</th>
+                    <th>Oblast</th>
+                </tr>
+            <tr>
+                <td><%=kurs.ime%></td>
+                <td><%=kurs.adresa%></td>
+                <td><%=kurs.oblast%></td>
+            </tr>
+            </table>
+         
+        </div>
+        <%}); %> 
+        <% } %>
+
+
+    
+    
+</body>
+</html>
+
+
